@@ -63,7 +63,7 @@ console.log("Your age is:" + ageCalculate(bDate));
 
 // let stringResult = "1,1";
 // f(n) = f(n-1) + f(n-2)
-/ / const fibo = (n) => {
+// / / const fibo = (n) => {
 //   let fib1 = 1;
 //   let fib2 = 1;
 //   let toplam = 0;
