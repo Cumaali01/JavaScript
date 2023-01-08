@@ -45,3 +45,18 @@ const hesapla = function (n1, n2) {
 };
 const sonuc = hesapla(15, 12);
 console.log(sonuc);
+
+const greet = (name, surName) => console.log(`Hello ${name} ${surName}`);
+
+greet(`James`, `Maddison`);
+
+function greet2(name1, surName1) {
+  console.log("Hello " + name1 + " " + surName1);
+}
+greet2("Helen", "Georgian");
+
+const greet3 = function (name2, surName2) {
+  console.log(`Hello ${name2} ${surName2}`);
+};
+
+greet3(`Ramsey`, `Southgate`);
