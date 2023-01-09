@@ -60,3 +60,23 @@ const greet3 = function (name2, surName2) {
 };
 
 greet3(`Ramsey`, `Southgate`);
+
+const name3 = "Dev Ed";
+const youtuber = "Elon Musk";
+
+function toUpper(text) {
+  const upperCased = text.toUpperCase();
+  console.log(upperCased);
+}
+
+toUpper(name3);
+toUpper(youtuber);
+
+const toLower = (text2, text3) => {
+  const lowerCased = text2.toLowerCase();
+  const upperCased = text3.toUpperCase();
+  console.log(`${lowerCased} ${upperCased}`);
+};
+
+toLower(name3, youtuber);
+// toLower(youtuber);
