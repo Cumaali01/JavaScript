@@ -122,9 +122,10 @@ console.log(word.includes("to be", 13)); //? true
 
 const toBe = word.indexOf("or");
 console.log(toBe); //? 6
+console.log(word.indexOf("To")); //? 0
 console.log(word.indexOf("be")); //? 3
 console.log(word.lastIndexOf("be")); //? 16
-console.log(word.lastIndexOf("BE")); //? -1
+console.log(word.lastIndexOf("BE")); //? -1 , it means false
 
 //* ----------------------------------------------------------
 //* search()
