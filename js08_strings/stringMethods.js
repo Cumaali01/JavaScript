@@ -131,10 +131,10 @@ console.log(word.lastIndexOf("BE")); //? -1 , it means false
 //* search()
 //* ----------------------------------------------------------
 
-const buyukHarf = /[A-Z]/;
+const capitalLetter = /[A-Z]/;
 const nokta = /[.]/;
 const virgul = /[,]/;
-console.log(word.search(buyukHarf)); //? ilk buyuk harfin indeksi 0
+console.log(word.search(capitalLetter)); //? ilk buyuk harfin indeksi 0
 console.log(word.search(virgul)); //?  18
 console.log(word.search(nokta)); //? -1
 
@@ -154,8 +154,10 @@ console.log(word2.endsWith("acar", 23)); //? true
 //* ----------------------------------------------------------
 let oku = "Oku Baban gibi, saf olma, saf olma";
 // console.log(oku.replace("saf olma", "basarili ol"));
+console.log(oku);
 oku = oku.replace("saf olma", "basarili ol");
-// oku = oku.replace(/saf olma/gi, "basarili ol");
+console.log(oku);
+oku = oku.replace(/saf olma/gi, "basarili ol"); //g: global, i: incase sensitive//
 console.log(oku);
 
 oku = oku.replace(/BASARILI/gi, "Zengin");
@@ -177,12 +179,12 @@ let degistir2 =
   " Little darling, don't shed no tears" +
   " No woman, no cry, eh";
 
-console.log(degistir2.replaceAll(/no/gi, "Hayir"));
+console.log(degistir2.replaceAll(/no/gi, "Yes"));
 
 //* ----------------------------------------------------------
-//*  slice(beginIndex[, endIndex])
-//*  substring(beginIndex[, endIndex])
-//*  substr (depreceated)
+//*  slice(beginIndex[, endIndex])- most updated one
+//*  substring(beginIndex[, endIndex]) ,old one and no negative index
+//*  substr (depreceated) , this is no longer in use
 //* ----------------------------------------------------------
 const veysel = "Uzun ince bir yoldayim yuruyorum gunduz gece..";
 
@@ -190,7 +192,7 @@ const sliced = veysel.slice(33);
 console.log(sliced, typeof sliced); //? gunduz gece..
 
 console.log(veysel.slice(17, 30)); //? dayim yuruyor.
-console.log(veysel.slice(-10)); //? duz gece..
+console.log(veysel.slice(-3)); //? duz gece..
 console.log(veysel.slice(-23, -19)); //? yuru
 
 console.log(veysel.substring(17, 30)); //? dayim yuruyor
@@ -201,11 +203,11 @@ console.log(veysel.substring(-10)); //? Uzun ince bir yoldayim yuruyorum gunduz 
 //* split([sep [, limit] ])
 //* ----------------------------------------------------------
 const tarkan = "Gel gunduzle gece olalim";
-const splited = tarkan.split(" ");
-console.log(splited, typeof splited); //! Bosluklara göre ayirarak Array'e cevirdi.
+const splitted = tarkan.split(" ");
+console.log(splitted, typeof splitted); //! Bosluklara göre ayirarak Array'e cevirdi.
 
 const chars = tarkan.split("");
-console.log(chars); //* null karakterine göre harfleri ayırarark bir char dizisi oluşturdu.
+console.log(chars, typeof chars); //* null karakterine göre harfleri ayırarark bir char dizisi oluşturdu.
 
 //* ----------------------------------------------------------
 //* trim();
@@ -218,8 +220,13 @@ console.log(ramazan.trim().length); //27
 
 //! ODEV1: tarkan string'indeki kelimelerin sayisini donduren
 //! bir fonksiyon yaziniz.
-
+const countTarkan = tarkan.split("");
+console.log(countTarkan);
+console.log(countTarkan.length);
 //! ODEV2:
 //! ----------------------------------------------------------
-// https://www.youtube.com/watch?v=b7vfp5G4brE
+const youtube = "https://www.youtube.com/watch?v=b7vfp5G4brE";
 // https://youtu.be/b7vfp5G4brE
+
+const sliceYoutube = youtube.slice(-11);
+console.log(sliceYoutube);
