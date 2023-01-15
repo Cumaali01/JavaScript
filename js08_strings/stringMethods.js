@@ -230,3 +230,18 @@ const youtube = "https://www.youtube.com/watch?v=b7vfp5G4brE";
 
 const sliceYoutube = youtube.slice(-11);
 console.log(sliceYoutube);
+
+const message = "Never mind I will find\nSomeone 'like' you";
+console.log(message);
+
+const another = `This is my 
+first message`;
+console.log(another);
+
+const mail = `Hi Mr Alonso,
+
+This is a reminder for a meeting.
+
+Regards,
+James`;
+console.log(mail);
