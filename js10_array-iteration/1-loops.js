@@ -96,3 +96,25 @@ const findStudentsOf = (arr, search) => {
 
 const studentName = prompt("Please enter a name").toLowerCase();
 console.log(findStudentsOf(students, studentName));
+
+//*Self Study
+
+const names = ["James", "George", "Robert", "Chloe", "Linda"];
+const surNames = ["Stones", "Alphonse", "Felipe", "Jonathan", "Iceberg"];
+
+let combine = (x, y) => {
+  let namesAndSurnames = [];
+  for (let i in x) {
+    // namesAndSurnames = [i] = `${x[i]} ${y[i]}`;
+    namesAndSurnames[i] = `${x[i]} ${y[i]}`;
+  }
+  return namesAndSurnames;
+};
+
+console.log(combine(names, surNames));
+
+const a = "Ayse";
+
+console.log(a.toUpperCase());
+
+console.log(names.toUpperCase[0]);
