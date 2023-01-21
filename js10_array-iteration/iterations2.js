@@ -45,3 +45,47 @@ console.log(`The positive numbers are: ${hasNegativeNumbers}`);
 
 hasPositiveNumbers = numbers.filter((x) => x > 0);
 console.log(`The positive numbers are: ${hasPositiveNumbers}`);
+
+//find
+const objects = [{ id: "a" }, { id: "b" }, { id: "c" }];
+found = objects.find((item) => {
+  return item.id === "b";
+});
+console.log(found);
+
+// filter
+const items = [
+  { name: "Bike", price: 100 },
+  { name: "Tv", price: 200 },
+  { name: "Album", price: 10 },
+  { name: "Book", price: 5 },
+  { name: "Phone", price: 500 },
+  { name: "Computer", price: 1000 },
+  { name: "Keyboard", price: 25 },
+];
+
+const filteredItems = items.filter((item) => {
+  return item.price <= 100;
+});
+console.log(filteredItems);
+
+//map
+const itemNames = items.map((item) => {
+  return item.name;
+});
+console.log(itemNames);
+
+//find
+const foundItem = items.find((item) => {
+  return item.name === "Computer";
+});
+console.log(foundItem);
+
+// forEach
+
+items.forEach((item) => {
+  console.log(item.name);
+});
+items.forEach((item) => {
+  console.log(item.price);
+});
