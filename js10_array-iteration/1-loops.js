@@ -116,5 +116,3 @@ console.log(combine(names, surNames));
 const a = "Ayse";
 
 console.log(a.toUpperCase());
-
-console.log(names.toUpperCase[0]);

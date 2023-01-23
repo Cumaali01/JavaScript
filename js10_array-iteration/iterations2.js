@@ -69,6 +69,11 @@ const filteredItems = items.filter((item) => {
 });
 console.log(filteredItems);
 
+const pricesLess = items.filter((item) => {
+  return item.price < 5000;
+});
+console.log(pricesLess);
+
 //map
 const itemNames = items.map((item) => {
   return item.name;
@@ -86,6 +91,7 @@ console.log(foundItem);
 items.forEach((item) => {
   console.log(item.name);
 });
+
 items.forEach((item) => {
   console.log(item.price);
 });
